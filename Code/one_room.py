@@ -1,9 +1,13 @@
+#this code accomplishes the task of moving to one room. The user needs to input the room number that the medicine is to be delivered.
+#the trolley starts moving and scans for qr code which is present at junctions. if the corresponding junction is reached the trolley turns into the room and delivers medicine
+#the program prints the movements of the trolley accordingly
 import sys
 import cv2
 import numpy as np
 from pyzbar.pyzbar import decode
 rno=int(input("Enter room number:"))
 dq=[]
+#function to traceback the movements to initial position
 def moveback(x):
     print("Trolley takes aboutturn")
     for i in x:
@@ -17,6 +21,7 @@ def moveback(x):
             print("Wrong")
     print("Trolley has reached initial position")
     sys.exit()
+#function to print the motor actions to reach the room
 def mov(m):
     a=m.split()
     a=[int(i) for i in a]
@@ -33,7 +38,7 @@ def mov(m):
             moveback(dq)
     else:
         print("Trolley proceeds to next junction")
-
+#videocapture from webcam
 cap = cv2.VideoCapture(0)
 
 while True:
@@ -41,6 +46,7 @@ while True:
 
     if not success:
         break
+    #decoding qrcode
     for code in decode(img):
         #print(code.data.decode("utf-8"))
         myData=code.data.decode("utf-8")
