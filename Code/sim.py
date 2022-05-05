@@ -1,4 +1,12 @@
+
 #class to mimic the junction
+class Junction:
+    def __init__(self,name,right,left,fwd):
+        self.name = name
+        self.right = right
+        self.left = left
+        self.fwd = fwd
+#tracing back to initial position
 def goback(x):
     l=len(x)
     for i in range(l-1,0,-1):
@@ -10,12 +18,6 @@ def goback(x):
             print("\nTrolley moves right")
         else:
             print("\nTrolley moves backwards")
-class Junction:
-    def __init__(self,name,right,left,fwd):
-        self.name = name
-        self.right = right
-        self.left = left
-        self.fwd = fwd
 flag=0
 list=[]
 #creating objects for each class
