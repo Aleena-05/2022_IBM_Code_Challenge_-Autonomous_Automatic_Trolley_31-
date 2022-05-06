@@ -12,7 +12,7 @@ To overcome this situation we propose an motorised medicine dispenser thus junct
 
 ### Architecture
 ALGORITHM: https://drive.google.com/file/d/195aitivQ_usJzKrJs-tHoWV-zw6ysVbd/view?usp=sharing
-HARDWARE: https://drive.google.com/file/d/17VCkl7s3qe6W1o5MiF0HUzd2j4sAOA74/view?usp=sharing
+<br />HARDWARE: https://drive.google.com/file/d/17VCkl7s3qe6W1o5MiF0HUzd2j4sAOA74/view?usp=sharing
 
 ### Hardware Components Used
   * RASPBERRY PI
@@ -21,7 +21,7 @@ HARDWARE: https://drive.google.com/file/d/17VCkl7s3qe6W1o5MiF0HUzd2j4sAOA74/view
   * MOTOR
 
 Presentation Link: https://docs.google.com/presentation/d/1EImxWvkzriGhr_L4y-YxDsMXZ59UENpc01mNr5SAP14/edit?usp=sharing
-Video Link: 
+<br />Video Link: https://drive.google.com/file/d/1RYqH-d9kDwnW-bIMf2sz9zqhkFxcdF_Y/view?usp=sharing
 
 SPLITUP
 * Idea : Elvis Joseph Shibu
