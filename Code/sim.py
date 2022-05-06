@@ -34,6 +34,7 @@ dq=[]
 #Target room numbers input from the user
 rno=input("\nEnter room numbers:")
 r=rno.split()
+#Converting the identified string to integer
 r=[int(i) for i in r]
 #motor movements
 for k in r:
